@@ -1,32 +1,21 @@
 console.log("Webpack configured successfully");
 
 import { fibs, fibsRec } from "./fibonacci";
-import { merge, mergeSort } from "./merge-sort";
+import { merge } from "./merge";
+import { mergeSort } from "./merge-sort";
 
 // console.log(fibs(8));
 // console.log(fibsRec(8));
 
-// console.log(merge([1, 3, 7, 9], [0, 5, 6, 11]));
-let a = [9, 3, 7, 5, 6, 4, 8, 2];
-console.log(a);
-mergeSort(a);
-console.log(a);
+// let a = [1, 3, 7, 9];
+// let b = [0, 5, 6, 11];
+// let c = [];
+// console.log(a);
+// console.log(b);
+// merge(a, b, c);
+// console.log(c);
 
-// function mergeSort(array) {
-//     let low = 0;
-//     let high = array.length - 1;
-
-//     if (low < high) {
-//         let mid = Math.floor((low + high) / 2);
-
-//         let left = array.slice(0, mid + 1);
-//         let right = array.slice(mid);
-//         console.log(left);
-//         console.log(right);
-
-//         mergeSort(left);
-//         mergeSort(right);
-
-//         merge(left, right);
-//     }
-// }
+let d = [9, 3, 7, 5, 6, 4, 8, 2];
+console.log(d);
+mergeSort(d);
+console.log(d);
