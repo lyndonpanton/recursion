@@ -1,4 +1,12 @@
 /* General ********************************************************************/
+:root {
+    --background-colour: #222222;
+    --text-colour: #FFFFFF;
+    --border-colour: #FFFFFF;
+    --button-colour: #333333;
+    --button-active-colour: #111111;
+}
+
 * {
     font-family: Futura, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
             "Lucida Sans", Arial, sans-serif;
@@ -12,8 +20,8 @@ body, html {
     font-style: normal;
     font-weight: normal;
 
-    background-color: #222222;
-    color: white;
+    background-color: var(--background-colour);
+    color: var(--text-colour);
 }
 
 /* Header *********************************************************************/
@@ -35,11 +43,13 @@ main {
 }
 
 .container {
-
+    margin: 0 auto;
+    width: 70%;
 }
 
 .container-heading {
-
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 .container-form {
@@ -47,35 +57,63 @@ main {
 }
 
 .form-legend {
-
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .form-count {
+    display: block;
 
+    margin: 35px auto;
+    height: 60px;
+    border-radius: 6px;
+
+    font-size: 2.5rem;
 }
 
 .form-submit {
+    display: block;
+    
+    margin: 35px auto;
+    width: 240px;
+    height: 60px;
+    border: 2px solid var(--border-colour);
+    border-radius: 6px;
 
+    background-color: var(--button-colour);
+
+    color: var(--text-colour);
+    font-size: 2rem;
+}
+
+.form-submit:active {
+    background-color: var(--button-active-colour);
 }
 
 .form-output {
-
+    font-size: 3rem;
+    line-height: 4.5lh;
+    text-align: center;
 }
 
 #fibonacci {
 
 }
 
-#fibonacci-form {
+#fibonacci .form-count {
+    width: 100px;
 
+    text-align: center;
 }
 
 #merge-sort {
 
 }
 
-#merge-sort-form {
-
+#merge-sort .form-count {
+    width: 800px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 /* Footer *********************************************************************/

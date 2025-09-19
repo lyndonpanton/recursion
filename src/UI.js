@@ -1,5 +1,6 @@
 import { fibs, fibsRec } from "./js/fibonacci"
 import { mergeSort } from "./js/merge-sort";
+import Footer from "./js/footer";
 
 class UI {
     constructor(main) {
@@ -40,7 +41,7 @@ class UI {
         let fibonacciLegend = document.createElement("legend");
         fibonacciLegend.classList.add("form-legend");
         fibonacciLegend.textContent =
-                "How many numbers in the sequence would you like?";
+                "Please enter the number of items in the sequence";
 
         let fibonacciAmount = document.createElement("input");
         fibonacciAmount.classList.add("form-count");
@@ -79,19 +80,23 @@ class UI {
     mergeSortCall(output, e) {
         e.preventDefault();
 
+        let list = [];
+        let j = 0;
         for (let i = 0; i < this.mergeSortList.length; i++) {
-            if (isNaN(this.mergeSortList[i])) {
-                // display with error message and return if value is not a number
-            } else {
-                this.mergeSortList[i] = parseInt(this.mergeSortList[i]);
+            // if element is not whitespace or a number, ignore it...
+        }
+
+        console.log(list);
+
+        mergeSort(this.mergeSortList);
+        for (let i = 0; i < this.mergeSortList.length; i++) {
+            // Ignore whitespace
+            if (!this.mergeSortList[i] == "") {
+                list[j++] = parseInt(this.mergeSortList[i]);
             }
         }
 
-        console.log(this.mergeSortList);
-
-        mergeSort(this.mergeSortList);
-
-        output.textContent = this.mergeSortList.join(", ")
+        output.textContent = list.join(", ")
 
         // also clear input field
         // this.mergeSortList = [];
@@ -113,7 +118,7 @@ class UI {
         let mergeSortLegend = document.createElement("legend");
         mergeSortLegend.classList.add("form-legend");
         mergeSortLegend.textContent =
-                "Enter space-separated values to sort";
+                "Please enter space-separated integers to sort";
 
         let mergeSortValues = document.createElement("input");
         mergeSortValues.classList.add("form-count");
@@ -131,7 +136,7 @@ class UI {
 
         let formButton = document.createElement("input");
         formButton.classList.add("form-submit");
-        formButton.value = "Merge and Sort";
+        formButton.value = "Apply";
         formButton.type = "submit";
 
         form.appendChild(mergeSortLegend);
