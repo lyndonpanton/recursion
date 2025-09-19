@@ -28,5 +28,6 @@ sort, using recursion.
 
 - [Respository](https://github.com/lyndonpanton/recursion)
 - [Lyndon Mykal Panton (Developer)](https://github.com/lyndonpanton)
+- [Favicon generator](https://favicon.io/favicon-generator/)
 
 ## References
