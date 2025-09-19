@@ -12,7 +12,7 @@ class Footer {
 
     createCopyright() {
         const component = document.createElement("article");
-        component.id = "footer-copyright";
+        component.id = "copyright";
 
         const rightsSymbol = document.createElement("span");
         rightsSymbol.classList.add("footer-copyright-symbol");
@@ -42,7 +42,7 @@ class Footer {
 
     createData() {
         const component = document.createElement("section");
-        component.id = "footer-data";
+        component.id = "data";
 
         component.appendChild(this.createDataLegal());
         component.appendChild(this.createDataSocial());
@@ -56,7 +56,7 @@ class Footer {
 
         let privacy = document.createElement("li");
         privacy.classList.add("data-list-item");
-        privacy.textContent = "Privacy";
+        privacy.textContent = "Privacy Policy";
         
         let terms = document.createElement("li");
         terms.classList.add("data-list-item");
