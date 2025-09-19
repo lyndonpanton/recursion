@@ -2,9 +2,11 @@ console.log("Webpack configured successfully");
 
 import "./css/styles.css"
 
-import { fibs, fibsRec } from "./js/fibonacci";
-import { merge } from "./js/merge";
-import { mergeSort } from "./js/merge-sort";
+import UI from "./UI"
+
+// import { fibs, fibsRec } from "./js/fibonacci";
+// import { merge } from "./js/merge";
+// import { mergeSort } from "./js/merge-sort";
 
 // console.log(fibs(8));
 // console.log(fibsRec(8));
@@ -17,7 +19,12 @@ import { mergeSort } from "./js/merge-sort";
 // merge(a, b, c);
 // console.log(c);
 
-let d = [9, 3, 7, 5, 6, 4, 8, 2];
-console.log(d);
-mergeSort(d);
-console.log(d);
+// let d = [9, 3, 7, 5, 6, 4, 8, 2];
+// console.log(d);
+// mergeSort(d);
+// console.log(d);
+
+const main = document.getElementsByTagName("main")[0];
+const ui = new UI(main);
+
+ui.displayUI();
