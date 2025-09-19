@@ -18,8 +18,6 @@ function merge(left, right, array) {
     while (j < right.length) {
         array[k++] = right[j++];
     }
-
-    // console.log(array);
 }
 
 export { merge };

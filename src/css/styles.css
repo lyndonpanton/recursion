@@ -1,10 +1,84 @@
+/* General ********************************************************************/
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Futura, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
 }
 
 body, html {
     margin: 0;
     padding: 0;
 
-    background-color: #E1E1FF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+
+    background-color: #222222;
+    color: white;
+}
+
+/* Header *********************************************************************/
+h1 {
+    margin: 0;
+    padding: 24px 0px;
+
+    font-size: 4rem;
+    text-align: center;
+}
+
+header {
+    height: 15vh;
+}
+
+/* Main ***********************************************************************/
+main {
+    height: 85vh;
+}
+
+.container {
+
+}
+
+.container-heading {
+
+}
+
+.container-form {
+
+}
+
+.form-legend {
+
+}
+
+.form-count {
+
+}
+
+.form-submit {
+
+}
+
+.form-output {
+
+}
+
+#fibonacci {
+
+}
+
+#fibonacci-form {
+
+}
+
+#merge-sort {
+
+}
+
+#merge-sort-form {
+
+}
+
+/* Footer *********************************************************************/
+footer {
+    
 }
