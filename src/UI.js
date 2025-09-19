@@ -20,8 +20,6 @@ class UI {
         this.body.appendChild(this.header.container);
         this.body.appendChild(this.main.container);
         this.body.appendChild(this.footer.container);
-
-        console.log(this.main.container);
     }
 }
 
