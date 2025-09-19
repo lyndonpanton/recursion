@@ -2,9 +2,9 @@ console.log("Webpack configured successfully");
 
 import "./css/styles.css"
 
-import { fibs, fibsRec } from "./fibonacci";
-import { merge } from "./merge";
-import { mergeSort } from "./merge-sort";
+import { fibs, fibsRec } from "./js/fibonacci";
+import { merge } from "./js/merge";
+import { mergeSort } from "./js/merge-sort";
 
 // console.log(fibs(8));
 // console.log(fibsRec(8));
