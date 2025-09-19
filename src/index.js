@@ -24,7 +24,6 @@ import UI from "./UI"
 // mergeSort(d);
 // console.log(d);
 
-const main = document.getElementsByTagName("main")[0];
-const ui = new UI(main);
-
-ui.displayUI();
+const body = document.getElementsByTagName("body")[0];
+const ui = new UI(body, "Recursion", "Lyndon Mykal Panton");
+ui.create();
