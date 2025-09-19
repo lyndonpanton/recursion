@@ -111,6 +111,7 @@ class Footer {
 
     createDeveloper() {
         const component = document.createElement("section");
+        component.id = "developer";
 
         component.appendChild(this.createDeveloperInformation());
         component.appendChild(this.createDeveloperLanguages());

@@ -5,6 +5,7 @@
     --border-colour: #FFFFFF;
     --button-colour: #333333;
     --button-active-colour: #111111;
+    --footer-background-colour: #292929;
 }
 
 * {
@@ -131,5 +132,51 @@ main {
 
 /* Footer *********************************************************************/
 footer {
-    
+    padding: 80px 15vw;
+
+    background-color: var(--footer-background-colour);
+}
+
+#developer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 0 80px 0;
+    border-bottom: 1px solid var(--border-colour);
+}
+
+.developer-list {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.developer-list-item {
+    margin: 20px 0;
+
+    font-size: 1.1rem;
+}
+
+.developer-list-heading {
+    margin: 40px 0;
+
+    font-size: 1.3rem;
+}
+
+.developer-list-link {
+    color: var(--text-colour);
+    text-decoration: none;
+}
+
+.developer-list-link:hover {
+    text-decoration: underline;
+}
+
+#data {
+
+}
+
+#copyright {
+
 }
