@@ -1,34 +1,41 @@
-// Use array size to determine depth
-function merge(left, right) {
+function merge(left, right, array) {
     let i = 0;
     let j = 0;
     let k = 0;
-    let result = [];
 
     while (i < left.length && j < right.length) {
         if (left[i] < right[j]) {
-            result[k++] = left[i++];
+            array[k++] = left[i++];
         } else {
-            result[k++] = right[j++];
+            array[k++] = right[j++];
         }
     }
 
     while (i < left.length) {
-        result[k++] = left[i++];
+        array[k++] = left[i++];
     }
 
     while (j < right.length) {
-        result[k++] = right[j++];
+        array[k++] = right[j++];
     }
 
-    return result;
+    // console.log(array);
 }
 
 function mergeSort(array) {
-    const left = array.slice(0, Math.floor(array.length / 2));
-    const right = array.slice(Math.floor(array.length() / 2));
+    let low = 0;
+    let high = array.length - 1;
 
-    
+    if (low < high) {
+        let mid = Math.floor((low + high) / 2);
+        let left = array.slice(0, mid + 1);
+        let right = array.slice(mid + 1);
+
+        mergeSort(left);
+        mergeSort(right);
+
+        merge(left, right, array);
+    }
 }
 
 export { merge, mergeSort };
