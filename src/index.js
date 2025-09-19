@@ -1,5 +1,7 @@
 console.log("Webpack configured successfully");
 
+import "./css/styles.css"
+
 import { fibs, fibsRec } from "./fibonacci";
 import { merge } from "./merge";
 import { mergeSort } from "./merge-sort";
