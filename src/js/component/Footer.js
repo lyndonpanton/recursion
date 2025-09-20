@@ -15,19 +15,19 @@ class Footer {
         component.id = "copyright";
 
         const rightsSymbol = document.createElement("span");
-        rightsSymbol.classList.add("footer-copyright-symbol");
+        rightsSymbol.classList.add("copyright-item", "copyright-symbol");
         rightsSymbol.innerHTML = "&copy; ";
         const rightsYear = document.createElement("span");
-        rightsYear.classList.add("footer-copyright-year");
+        rightsYear.classList.add("copyright-item", "copyright-year");
         rightsYear.textContent = new Date().getFullYear() + " ";
         const rightsHolder = document.createElement("span");
-        rightsHolder.classList.add("footer-copyright-author");
+        rightsHolder.classList.add("copyright-item", "copyright-author");
         rightsHolder.textContent = this.author;
         const rightsDivider = document.createElement("span");
-        rightsDivider.classList.add("footer-copyright-divider");
+        rightsDivider.classList.add("copyright-item", "copyright-divider");
         rightsDivider.textContent = " | ";
         const rightsType = document.createElement("span");
-        rightsType.classList.add("footer-copyright-type");
+        rightsType.classList.add("copyright-item", "copyright-type");
         rightsType.textContent = "All Rights Reserved";
 
         component.appendChild(rightsSymbol);
