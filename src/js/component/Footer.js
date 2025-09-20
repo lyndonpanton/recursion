@@ -86,7 +86,8 @@ class Footer {
         twitter.classList.add("data-list-item");
         let twitterLink = document.createElement("a");
         twitterLink.classList.add("data-list-link");
-        twitterLink.href = "https://twitter.com";
+        twitterLink.href = "https://twitter.com"
+        twitterLink.target = "_blank";
         let twitterGraphic = document.createElement("img");
         twitterGraphic.classList.add("data-list-graphic");
         twitterGraphic.src = twitterIcon;
@@ -98,7 +99,8 @@ class Footer {
         facebook.classList.add("data-list-item");
         let facebookLink = document.createElement("a");
         facebookLink.classList.add("data-list-link");
-        facebookLink.href = "https://facebook.com";
+        facebookLink.href = "https://facebook.com"
+        facebookLink.target = "_blank";
         let facebookGraphic = document.createElement("img");
         facebookGraphic.classList.add("data-list-graphic");
         facebookGraphic.src = facebookIcon
@@ -110,7 +112,8 @@ class Footer {
         instagram.classList.add("data-list-item");
         let instagramLink = document.createElement("a");
         instagramLink.classList.add("data-list-link");
-        instagramLink.href = "https://instagram.com";
+        instagramLink.href = "https://instagram.com"
+        instagramLink.target = "_blank";
         let instagramGraphic = document.createElement("img");
         instagramGraphic.classList.add("data-list-graphic");
         instagramGraphic.src = instagramIcon;
@@ -151,6 +154,7 @@ class Footer {
         portfolioLink.classList.add("developer-list-link");
         portfolioLink.textContent = "Portfolio"
         portfolioLink.href = "https://lyndonpanton.co.uk/";
+        portfolioLink.target = "_blank";
         portfolio.appendChild(portfolioLink);
 
         let github = document.createElement("li");
@@ -159,6 +163,7 @@ class Footer {
         githubLink.classList.add("developer-list-link");
         githubLink.textContent = "GitHub"
         githubLink.href = "https://github.com/lyndonpanton";
+        githubLink.target = "_blank";
         github.appendChild(githubLink);
         
         let linkedin = document.createElement("li");
@@ -167,6 +172,7 @@ class Footer {
         linkedinLink.classList.add("developer-list-link");
         linkedinLink.textContent = "LinkedIn"
         linkedinLink.href = "https://www.linkedin.com/in/lyndonpanton/";
+        linkedinLink.target = "_blank";
         linkedin.appendChild(linkedinLink);
 
         component.appendChild(heading);
@@ -190,6 +196,7 @@ class Footer {
         let htmlLink = document.createElement("a");
         htmlLink.classList.add("developer-list-link");
         htmlLink.href = "https://developer.mozilla.org/en-US/docs/Web/HTML";
+        htmlLink.target = "_blank";
         htmlLink.textContent = "HTML";
         html.appendChild(htmlLink);
 
@@ -198,6 +205,7 @@ class Footer {
         let cssLink = document.createElement("a");
         cssLink.classList.add("developer-list-link");
         cssLink.href = "https://developer.mozilla.org/en-US/docs/Web/CSS";
+        cssLink.target = "_blank";
         cssLink.textContent = "CSS";
         css.appendChild(cssLink);
 
@@ -206,6 +214,7 @@ class Footer {
         let javaScriptLink = document.createElement("a");
         javaScriptLink.classList.add("developer-list-link");
         javaScriptLink.href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript";
+        javaScriptLink.target = "_blank";
         javaScriptLink.textContent = "JavaScript";
         javaScript.appendChild(javaScriptLink);
 
@@ -230,6 +239,7 @@ class Footer {
         let npmLink = document.createElement("a");
         npmLink.classList.add("developer-list-link");
         npmLink.href = "https://www.npmjs.com/";
+        npmLink.target = "_blank";
         npmLink.textContent = "npm";
         npm.appendChild(npmLink);
 
@@ -238,6 +248,7 @@ class Footer {
         let webpackLink = document.createElement("a");
         webpackLink.classList.add("developer-list-link");
         webpackLink.href = "https://webpack.js.org/";
+        webpackLink.target = "_blank";
         webpackLink.textContent = "Webpack";
         webpack.appendChild(webpackLink);
 
@@ -261,6 +272,7 @@ class Footer {
         let weatherAppLink = document.createElement("a");
         weatherAppLink.classList.add("developer-list-link");
         weatherAppLink.href = "https://lyndonpanton.github.io/weather-app/";
+        weatherAppLink.target = "_blank";
         weatherAppLink.textContent = "Weather Forecast";
         weatherApp.appendChild(weatherAppLink);
 
@@ -269,6 +281,7 @@ class Footer {
         let pixelArtEditorLink = document.createElement("a");
         pixelArtEditorLink.classList.add("developer-list-link");
         pixelArtEditorLink.href = "https://github.com/lyndonpanton/pixel-art-editor";
+        pixelArtEditorLink.target = "_blank";
         pixelArtEditorLink.textContent = "Pixel Art Editor";
         pixelArtEditor.appendChild(pixelArtEditorLink);
 
@@ -277,6 +290,7 @@ class Footer {
         let currencyConverterLink = document.createElement("a");
         currencyConverterLink.classList.add("developer-list-link");
         currencyConverterLink.href = "https://github.com/lyndonpanton/currency-converter";
+        currencyConverterLink.target = "_blank";
         currencyConverterLink.textContent = "Currency Converter";
         currencyConverter.appendChild(currencyConverterLink);
 
@@ -285,6 +299,7 @@ class Footer {
         let wordCounterLink = document.createElement("a");
         wordCounterLink.classList.add("developer-list-link");
         wordCounterLink.href = "https://github.com/lyndonpanton/word-counter";
+        wordCounterLink.target = "_blank";
         wordCounterLink.textContent = "Word Counter";
         wordCounter.appendChild(wordCounterLink);
 
