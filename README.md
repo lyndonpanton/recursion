@@ -42,3 +42,7 @@ sort, using recursion.
     - [Instagram icon](https://fontawesome.com/icons/instagram?f=brands&s=solid)
 
 ## References
+
+- [Contrast checker | Coolors](https://coolors.co/contrast-checker/112a46-acc8e5)
+- [CSS Color Filter Generator | ClampCSS](https://clampcss.com/css-filter.html)
+- [Social media icon hex codes](https://brandpalettes.com/)

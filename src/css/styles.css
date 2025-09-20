@@ -214,6 +214,32 @@ footer {
 .data-list-graphic {
     width: 36px;
     height: 36px;
+
+    transition: filter linear 0.5s;
+}
+
+.data-list-graphic-twitter:hover {
+    /* #1D9BF0 */
+    filter: brightness(0) saturate(100%) invert(44%) sepia(100%) saturate(1227%)
+            hue-rotate(179deg) brightness(98%) contrast(92%);
+    
+    transition: filter linear 0.5s;
+}
+
+.data-list-graphic-facebook:hover {
+    /* #17A9FD */
+    filter: brightness(0) saturate(100%) invert(46%) sepia(87%) saturate(1141%)
+            hue-rotate(176deg) brightness(102%) contrast(98%);
+    
+    transition: filter linear 0.5s;
+}
+
+.data-list-graphic-instagram:hover {
+    /* #FCAF45 */
+    filter: brightness(0) saturate(100%) invert(86%) sepia(23%) saturate(3119%)
+            hue-rotate(325deg) brightness(102%) contrast(98%);
+    
+    transition: filter linear 0.5s;
 }
 
 #copyright {

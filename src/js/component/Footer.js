@@ -89,7 +89,9 @@ class Footer {
         twitterLink.href = "https://twitter.com"
         twitterLink.target = "_blank";
         let twitterGraphic = document.createElement("img");
-        twitterGraphic.classList.add("data-list-graphic");
+        twitterGraphic.classList.add(
+            "data-list-graphic", "data-list-graphic-twitter"
+        );
         twitterGraphic.src = twitterIcon;
         twitterGraphic.alt = "Twitter icon";
         twitterLink.appendChild(twitterGraphic);
@@ -102,7 +104,9 @@ class Footer {
         facebookLink.href = "https://facebook.com"
         facebookLink.target = "_blank";
         let facebookGraphic = document.createElement("img");
-        facebookGraphic.classList.add("data-list-graphic");
+        facebookGraphic.classList.add(
+            "data-list-graphic", "data-list-graphic-facebook"
+        );
         facebookGraphic.src = facebookIcon
         facebookGraphic.alt = "Facebook icon";
         facebookLink.appendChild(facebookGraphic);
@@ -115,7 +119,9 @@ class Footer {
         instagramLink.href = "https://instagram.com"
         instagramLink.target = "_blank";
         let instagramGraphic = document.createElement("img");
-        instagramGraphic.classList.add("data-list-graphic");
+        instagramGraphic.classList.add(
+            "data-list-graphic", "data-list-graphic-instagram"
+        );
         instagramGraphic.src = instagramIcon;
         instagramGraphic.alt = "Instagram icon";
         instagramLink.appendChild(instagramGraphic);
