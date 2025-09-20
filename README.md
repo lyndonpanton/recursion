@@ -18,9 +18,43 @@ sort, using recursion.
 
 ### Getting Started
 
+- Download the project from [github](https://github.com/lyndonpanton/recursion)
+- Open your terminal in the project's root directory
+- Run `npm install`
+- Run `npm run build`
+- Open the _index.html_ file in the _dist_ directory to view and interact with
+the appliction
+
 ### Features
 
+- Users can retrieve the numbers in the fibonacci sequence
+- Users can enter a list of integers and apply a merge sort algorithm to them
+
 ### Technologies
+
+#### Languages and Frameworks
+
+- HTML
+- CSS
+- JavaScript
+
+#### Managers, Packages, and Libraries
+
+- npm
+- Webpack
+
+#### APIs
+
+- n/a
+
+#### Developer Tools
+
+- Git
+- GitHub
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Visual Studio Code
 
 ## Notes
 

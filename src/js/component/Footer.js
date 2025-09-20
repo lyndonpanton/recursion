@@ -258,9 +258,19 @@ class Footer {
         webpackLink.textContent = "Webpack";
         webpack.appendChild(webpackLink);
 
+        let fontAwesome = document.createElement("li");
+        fontAwesome.classList.add("developer-list-item");
+        let fontAwesomeLink = document.createElement("a");
+        fontAwesomeLink.classList.add("developer-list-link");
+        fontAwesomeLink.href = "https://fontawesome.com/"
+        fontAwesomeLink.target = "_blank";
+        fontAwesomeLink.textContent = "Font Awesome";
+        fontAwesome.appendChild(fontAwesomeLink);
+
         component.appendChild(heading);
         component.appendChild(npm);
         component.appendChild(webpack);
+        component.appendChild(fontAwesome);
         
         return component;
     }
