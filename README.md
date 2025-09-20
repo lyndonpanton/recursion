@@ -40,6 +40,7 @@ sort, using recursion.
     - [Twitter icon](https://fontawesome.com/icons/twitter?f=brands&s=solid)
     - [Facebook icon](https://fontawesome.com/icons/facebook?f=brands&s=solid)
     - [Instagram icon](https://fontawesome.com/icons/instagram?f=brands&s=solid)
+- [Afacad Flux font | Just Free Fonts](https://justfreefonts.com/fonts/afacad-flux/)
 
 ## References
 
