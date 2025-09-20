@@ -6,6 +6,7 @@
     --button-colour: #333333;
     --button-active-colour: #111111;
     --footer-background-colour: #292929;
+    --graphic-colour: #FFFFFF;
 }
 
 * {
@@ -177,6 +178,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .data-list {
@@ -184,7 +186,7 @@ footer {
     flex-direction: row;
     gap: 32px;
 
-    margin: 30px 0;
+    margin: 16px 0;
     padding: 0;
 
     list-style-type: none;
@@ -192,6 +194,12 @@ footer {
 
 .data-list-item {
 
+}
+
+.data-list-item:hover {
+    text-decoration: underline;
+
+    cursor: pointer;
 }
 
 .data-list-link {
@@ -203,10 +211,9 @@ footer {
     
 }
 
-.data-list-item:hover {
-    text-decoration: underline;
-
-    cursor: pointer;
+.data-list-graphic {
+    width: 36px;
+    height: 36px;
 }
 
 #copyright {

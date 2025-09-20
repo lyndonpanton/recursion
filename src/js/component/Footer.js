@@ -1,3 +1,7 @@
+import twitterIcon from "../../icon/social/twitter.svg"
+import facebookIcon from "../../icon/social/facebook.svg"
+import instagramIcon from "../../icon/social/instagram.svg"
+
 class Footer {
     constructor(author) {
         this.container = document.createElement("footer");
@@ -82,24 +86,36 @@ class Footer {
         twitter.classList.add("data-list-item");
         let twitterLink = document.createElement("a");
         twitterLink.classList.add("data-list-link");
-        twitterLink.textContent = "Twitter"
         twitterLink.href = "https://twitter.com";
+        let twitterGraphic = document.createElement("img");
+        twitterGraphic.classList.add("data-list-graphic");
+        twitterGraphic.src = twitterIcon;
+        twitterGraphic.alt = "Twitter icon";
+        twitterLink.appendChild(twitterGraphic);
         twitter.appendChild(twitterLink);
         
         let facebook = document.createElement("li");
         facebook.classList.add("data-list-item");
         let facebookLink = document.createElement("a");
         facebookLink.classList.add("data-list-link");
-        facebookLink.textContent = "Facebook"
         facebookLink.href = "https://facebook.com";
+        let facebookGraphic = document.createElement("img");
+        facebookGraphic.classList.add("data-list-graphic");
+        facebookGraphic.src = facebookIcon
+        facebookGraphic.alt = "Facebook icon";
+        facebookLink.appendChild(facebookGraphic);
         facebook.appendChild(facebookLink);
         
         let instagram = document.createElement("li");
         instagram.classList.add("data-list-item");
         let instagramLink = document.createElement("a");
         instagramLink.classList.add("data-list-link");
-        instagramLink.textContent = "Instagram"
         instagramLink.href = "https://instagram.com";
+        let instagramGraphic = document.createElement("img");
+        instagramGraphic.classList.add("data-list-graphic");
+        instagramGraphic.src = instagramIcon;
+        instagramGraphic.alt = "Instagram icon";
+        instagramLink.appendChild(instagramGraphic);
         instagram.appendChild(instagramLink);
 
         component.appendChild(twitter);
